@@ -20,10 +20,11 @@ int main (void)
             {
                 printf("%c", toupper(name[i]));
             }    
-            else if(isspace(name[i-1]))
+            else if(isspace(name[i-1]) && isalpha(name[i]))
             {
                 printf("%c", toupper(name[i]));
             }
+            
         }
         printf("\n");
     }
