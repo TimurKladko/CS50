@@ -25,7 +25,7 @@ int main(int argc, string argv[])
     string text = get_string();
     
     for (int i =0 , n = strlen(text); i < n; i++)
-    
+    {
         if (isalpha (text[i]))
         {
             if (isupper(text[i]))
@@ -41,6 +41,7 @@ int main(int argc, string argv[])
         {
             printf("%c", text[i]);
         }
-    printf("\n");
-    return 0;    
+    }
+    return 0;  
+      
 }
