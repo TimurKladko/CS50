@@ -13,29 +13,11 @@
  */
 bool search(int value, int values[], int n)
 {
-    int min = 0;
-    int max = n - 1;
-    
-    while(min<=max)
-    {
-        int mid = min + ((max-min)/2);
-        if (value == values[mid])
-        {
+    // TODO: implement a searching algorithm
+      for (int i = 0; i < n; i++)
+        if (values[i] == value)
             return true;
-        }
-        else if (value < values[mid])
-        {
-            max = mid - 1;
-        }
-        else if (value > values[mid])
-        {
-            min = mid + 1;
-        }
-        else
-        {
-            return false;
-        }
-    }
+
     return false;
 }
 
@@ -44,7 +26,7 @@ bool search(int value, int values[], int n)
  */
 void sort(int values[], int n)
 {
-    bool k;
+        bool k;
 
     do
     {
